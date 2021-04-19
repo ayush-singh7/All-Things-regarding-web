@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #map{
+            width:100vw;
+            height:100vh;
+        }
+        #heading{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: black;
+            color:white
+        }
+    </style>
+    <title>Ace Corona Tracker</title>
+</head>
+<body>
+    <h1 id= "heading">Ace Corona Tracker</h1>
+    <div id='map'></div>
+
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXl1c2h3YXNoZXJlIiwiYSI6ImNrbm5xanc3cjEwc3gyd20weWtwMXN5dGkifQ.ZtsAH-wtccNxg_TIsIY2ww';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom:1
+    });
+</script>
+<script src="index.js">
+</script>
+    
+</html>
